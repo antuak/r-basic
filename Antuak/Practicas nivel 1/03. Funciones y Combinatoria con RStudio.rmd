@@ -1,0 +1,67 @@
+---
+title: "Funciones y Combinatoria con RStudio"
+author: "Antonio Ortega"
+date: "3/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Funciones matemáticas de RStudio
+
+### Raiz cuadrada
+```{r}
+# sqrt(x)
+sqrt(10)
+```
+
+
+### Exponencial
+```{r}
+# exp(x)
+exp(10)
+```
+
+
+### Logaritmo en cualquier base
+```{r}
+# log(x)
+log(6) 
+```
+
+
+### Logaritmo en base 10
+```{r}
+# log10(x)
+log10(6) 
+```
+
+
+### Logaritmo neperiano
+```{r}
+# log(x,a)
+log(6,4) # Logaritmo de 6 en base 4
+```
+
+
+### Valor absoluto
+```{r}
+# abs(x)
+abs(-pi)
+```
+
+
+### Numero factorial
+```{r}
+# factorial(x)
+factorial(5)
+```
+
+
+### Coeficiente binomial
+```{r}
+# choose(n,m)
+choose(5,3)
+```

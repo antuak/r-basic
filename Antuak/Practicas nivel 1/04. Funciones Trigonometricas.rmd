@@ -1,0 +1,52 @@
+---
+title: "Funciones Trigonométricas"
+author: "Antonio Ortega"
+date: "3/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Trigonometría en radianes
+
+### Seno
+```{r}
+# sin(x)
+sin(60*pi/180)
+```
+
+
+### Coseno
+```{r}
+# cos(x)
+cos(60*pi/180)
+```
+
+
+### Tangente
+```{r}
+# tan(x)
+tan(60*pi/180)
+```
+
+
+### Arcoseno
+```{r}
+# asin(x)
+asin(0.8660254) * 180 /pi
+```
+
+
+### Arcocoseno
+```{r}
+# acos(x)
+acos(0.5) * 180 /pi
+```
+
+### Arcotangente
+```{r}
+# atan(x)
+atan(1.732051) * 180 /pi
+```

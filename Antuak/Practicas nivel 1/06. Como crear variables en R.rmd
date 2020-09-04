@@ -1,0 +1,41 @@
+---
+title: "Cómo crear variables en R"
+author: "Antonio Ortega"
+date: "3/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Variables y funciones
+
+### Variables
+```{r}
+# nombre_variable = valor: Define una variable con el valor especificado
+mi_variable <- 5
+edad <- 37
+nombre <- "Antonio"
+```
+
+
+### Funciones
+```{r}
+# nombre_funcion = function(variable) {función}: Define una función
+doble <- function(x){2*x}
+doble(mi_variable)
+```
+
+```{r}
+cuadrado <- function(x){x^2}
+cuadrado(mi_variable)
+```
+
+```{r}
+cubo <- function(x){
+  x^3
+}
+cubo(mi_variable)
+```
+

@@ -12,7 +12,7 @@
 <meta name="author" content="Antonio Ortega" />
 
 
-<title>Binomio de Newton</title>
+<title>Redondeo y decimales en R</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -375,37 +375,45 @@ summary {
 
 
 
-<h1 class="title toc-ignore">Binomio de Newton</h1>
+<h1 class="title toc-ignore">Redondeo y decimales en R</h1>
 <h4 class="author">Antonio Ortega</h4>
-<h4 class="date">1/9/2020</h4>
+<h4 class="date">3/9/2020</h4>
 
 </div>
 
 
-<div id="producto-notable" class="section level2">
-<h2>Producto Notable</h2>
-<p>La formula del producto notable es:</p>
-<p><span class="math display">\[(a+b)^2=a^2+2ab+b^2\]</span></p>
+<div id="números-en-coma-flotante" class="section level2">
+<h2>Números en coma flotante</h2>
+<div id="muestra-las-n-cifras-significativas-del-numero-x" class="section level3">
+<h3>Muestra las n cifras significativas del numero x</h3>
+<pre class="r"><code># print(x,n)
+print(sqrt(2),3)</code></pre>
+<pre><code>## [1] 1.41</code></pre>
 </div>
-<div id="función-con-r" class="section level1">
-<h1>Función con R</h1>
-<pre class="r"><code>binomioNewton2 = function(a, b){
-  a^2+2*a*b+b^2
-}
-binomioNewton2(1,2)</code></pre>
-<pre><code>## [1] 9</code></pre>
+<div id="redondea-las-n-cifras-significativas-de-un-resultado-o-un-vector-numérico" class="section level3">
+<h3>Redondea las n cifras significativas de un resultado o un vector numérico</h3>
+<pre class="r"><code># round(x,n)
+round(sqrt(5),2)</code></pre>
+<pre><code>## [1] 2.24</code></pre>
 </div>
-<div id="binomio-de-newton" class="section level1">
-<h1>Binomio de Newton</h1>
-<p><span class="math display">\[(a+b)^n=\sum_{k=0}^n {n\choose k}\cdot a^{n-k}\cdot b^k\]</span></p>
+<div id="devuelve-el-valor-absoluto-de-la-parte-entera-por-defecto-de-x" class="section level3">
+<h3>Devuelve el valor absoluto de la parte entera por defecto de x</h3>
+<pre class="r"><code># floor(x)
+floor(sqrt(5))</code></pre>
+<pre><code>## [1] 2</code></pre>
 </div>
-<div id="función-en-r" class="section level1">
-<h1>Función en R</h1>
-<pre class="r"><code>binomioNewton = function(a, b, n){
-  cumsum(choose(n,(0:n))*a^{n-(0:n)}*b^(0:n))[n+1]
-}
-binomioNewton(2,1,2)</code></pre>
-<pre><code>## [1] 9</code></pre>
+<div id="devuelve-el-valor-absoluto-de-la-parte-entera-por-exceso-de-x" class="section level3">
+<h3>Devuelve el valor absoluto de la parte entera por exceso de x</h3>
+<pre class="r"><code># ceiling(x)
+ceiling(sqrt(5))</code></pre>
+<pre><code>## [1] 3</code></pre>
+</div>
+<div id="devuelve-la-parte-entera-de-x-eliminando-la-parte-decimal" class="section level3">
+<h3>Devuelve la parte entera de x eliminando la parte decimal</h3>
+<pre class="r"><code># trunc(x)
+trunc(sqrt(5))</code></pre>
+<pre><code>## [1] 2</code></pre>
+</div>
 </div>
 
 

@@ -1,0 +1,46 @@
+---
+title: "Redondeo y decimales en R"
+author: "Antonio Ortega"
+date: "3/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Números en coma flotante
+
+### Muestra las n cifras significativas del numero x
+```{r}
+# print(x,n)
+print(sqrt(2),3)
+```
+
+
+### Redondea las n cifras significativas de un resultado o un vector numérico
+```{r}
+# round(x,n)
+round(sqrt(5),2)
+```
+
+
+### Devuelve el valor absoluto de la parte entera por defecto de x
+```{r}
+# floor(x)
+floor(sqrt(5))
+```
+
+
+### Devuelve el valor absoluto de la parte entera por exceso de x
+```{r}
+# ceiling(x)
+ceiling(sqrt(5))
+```
+
+
+### Devuelve la parte entera de x eliminando la parte decimal
+```{r}
+# trunc(x)
+trunc(sqrt(5))
+```

@@ -1,0 +1,59 @@
+---
+title: "R como calculadora"
+author: "Antonio Ortega"
+date: "3/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Operaciones aritméticas
+
+### Sumas:
+```{r}
+2+3
+2+3+1
+2+(3*2)
+```
+
+
+### Restas:
+```{r}
+3-2
+3-1+2
+3-(1+2)
+```
+
+
+### Multiplicación:
+```{r}
+2*3
+2*3*2
+2*3-2
+2*(3-2)
+```
+
+
+### Division
+```{r}
+3/2
+3%%2 #Resto de división entera
+3%/%2 #Cociente entero
+7%/%3
+7%%3
+```
+
+
+### Formato de numeros excesivamente grandes
+```{r}
+2^50 # Resultado: 1.1259e+15 o 1125900000000000
+```
+
+
+### Formato de numeros demasiado pequeños
+```{r}
+2^(-20) # Resultado: 9.536743e-07 o 0.0000009536743
+```
+
